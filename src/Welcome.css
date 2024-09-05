@@ -1,0 +1,58 @@
+/* Welcome.css */
+.welcome-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f0f0f0, #cfe9ff);
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  .welcome-message {
+    text-align: center;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: slideUp 1s forwards;
+  }
+  
+  .welcome-title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #4a90e2;
+    animation: fadeInText 1.5s ease-in-out;
+  }
+  
+  .welcome-text {
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideUp {
+    from {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeInText {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
